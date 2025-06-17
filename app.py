@@ -49,7 +49,7 @@ st.markdown("""
 # Load model and encoder
 @st.cache_resource
 def load_model():
-    model = joblib.load('xgb_modelo_iris_xgb.pkl')
+    model = joblib.load('xgb_modelo_iris.pkl')
     label_encoder = joblib.load('label_encoder.pkl')
     return model, label_encoder
 
