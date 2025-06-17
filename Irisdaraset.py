@@ -232,9 +232,21 @@ print("Best score:", grid_svm.best_score_)
 from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score
 
+from sklearn.ensemble import RandomForestClassifier
+
+clf = RandomForestClassifier(n_estimators=100)
+clf.fit(X_train, y_train)
+y_pred = clf.predict(X_test)
+print('Precisión Random Forest Clasificación: {}'.format(clf.score(X_train, y_train)))
 
 
+from sklearn.tree import DecisionTreeClassifier
 
+#Modelo de Árboles de Decisión Clasificación
+algoritmo = DecisionTreeClassifier()
+algoritmo.fit(X_train, y_train)
+Y_pred = algoritmo.predict(X_test)
+print('Precisión Árboles de Decisión Clasificación: {}'.format(algoritmo.score(X_train, y_train)))
 
 # Entrenar XGBoost
 xgb_model = XGBClassifier(objective='multi:softmax', num_class=3, random_state=42)
@@ -276,16 +288,16 @@ print(f"Accuracy (Original Labels): {accuracy_original:.4f}")
 import pickle
 
 # Guardar el modelo
-with open('xgb_modelo_iris_xgb.pkl', 'wb') as file:
+with open('xgb_modelo_iris.pkl', 'wb') as file:
     pickle.dump(xgb_model, file)
 
-print("✅ Modelo guardado como 'xgb_modelo_iris_xgb.pkl'")
+print("✅ Modelo guardado como 'xgb_modelo_iris.pkl'")
 
 
 import joblib
 
 # Guardar
-joblib.dump(grid_svm, 'model_svm_iris.joblib')
+joblib.dump(clf, 'randomforest.joblib')
 
 
 
@@ -301,5 +313,5 @@ new_sample = [[5.1, 3.5, 1.4, 0.2]]  # Must match training format
 print("Prediction:", xgb_model.predict(new_sample))
 
 new_sample = [[5.1, 3.5, 1.4, 0.2]]  # Must match training format
-print("Prediction:", grid_svm.predict(new_sample))
+print("Prediction:", clf.predict(new_sample))
  
