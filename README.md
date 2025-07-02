@@ -1,13 +1,13 @@
 # 🌸 Iris Flower Classification System
 
 ![App Screenshot](https://via.placeholder.com/800x400?text=Iris+Classification+App) <!-- Add real screenshot later -->
-![craiyon_114112_flor_iris](https://user-images.githubusercontent.com/98030137/234824434-80e035a7-0b07-4840-aca7-f8873b9314c6.png)
+![craiyon_114112_flor_iris](https://user-images.githubusercontent.com/98030137/iris1.png)
 
 **Sistema de clasificación de flores Iris usando XGBoost**  
 *Professional ML web app built with Streamlit*
 
 ## 🌟 Features / Características
-
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin: 20px 0;"> <img src="./assets/iris1.png" alt="Entrada manual de datos" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"> <img src="./assets/iris2.png" alt="Carga de archivos CSV" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"> <img src="./assets/iris3.png" alt="Visualización de resultados" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"> <img src="./assets/iris4.png" alt="Perfiles de especies" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"> </div>
 ### **English Version**
 - **Accurate Predictions**: XGBoost-powered classifier (94%+ accuracy)
 - **Two Input Modes**:
@@ -64,4 +64,4 @@ https://via.placeholder.com/400x250?text=CSV+Upload
 RL License - © 2025 [Rosana Longares]
 
 🌐 Live Demo: [Coming Soon]
-🐛 Report Issues: [GitHub Issues]
+🐛 Report Issues: [GitHub Issues] vamos a mejorar este voy a añadir 4 fotos del streamlit
