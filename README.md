@@ -1,8 +1,5 @@
 # 🌸 Iris Flower Classification System
 
-![App Screenshot](https://via.placeholder.com/800x400?text=Iris+Classification+App) <!-- Add real screenshot later -->
-![craiyon_114112_flor_iris](https://user-images.githubusercontent.com/98030137/iris1.png)
-
 **Sistema de clasificación de flores Iris usando XGBoost**  
 *Professional ML web app built with Streamlit*
 
